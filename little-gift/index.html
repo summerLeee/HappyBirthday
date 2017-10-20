@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS3图片重力感应特效在线演示</title>
+
+        <!-- CSS Includes -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <style>
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+
+    <body>
+</div>
+        <ul id="gallery" style="position:absolute;">
+			<!-- The instagram photos will go here as <li> elements -->
+        <li><a target="_blank"><img src="me.png"></a></li>
+		<li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+        <li><a target="_blank"><img src="me.png"></a></li>
+        <li><a target="_blank"><img src="you.png"></a></li>
+
+        <div width="1500px" height="10px"></div>
+		</ul>
+        
+        <!--<a href="#" id="gravityButton">Start!</a>-->
+
+
+
+        <!-- JavaScript includes -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/jGravity-min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script type="text/javascript">
+        window.onload=function(){
+        // Turn on the gravity!
+        $('body').jGravity({
+            target: '#gallery li,div',
+            ignoreClass: 'ignoreMe',
+            weight: 8,
+            depth: 300,
+            drag: true
+        });
+
+        
+     $('#gallery').removeAttr("style");
+    }
+        </script>
+        
+    </body>
+</html>
+

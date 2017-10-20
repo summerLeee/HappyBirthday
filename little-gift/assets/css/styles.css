@@ -1,0 +1,103 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Page Styles
+--------------------------*/
+
+
+html{
+	background:url('../img/bg.png'),#ebe5e5;
+	background-size: 100%,80%;
+	background-repeat:no-repeat;
+	/*position:relative;*/
+	position:relative;
+}
+
+body{
+	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+	height:100%;
+	overflow:hidden;
+	padding-bottom:10px;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+section, footer, nav{
+	display: block;
+}
+
+
+/*----------------------------
+	The Gallery
+-----------------------------*/
+
+
+h1{
+	font: 36px 'Cookie', cursive;
+	color: white;
+	width: 210px;
+	margin: 20px auto 50px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+#gallery{
+	left:72px;
+	top:-100px;
+	width: 1000px;
+	height: 1500px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#gallery li{
+	list-style: none;
+	float: left;
+	width:150px;
+	height:150px;
+	border-radius:150px;
+}
+
+#gallery a{
+	display:block;
+}
+
+#gallery a img{
+	display:block;
+	width:150px;
+	height:150px;
+	border-radius:150px
+}
+
+/* This class is automatically added to the photos when the physics simulation starts */
+.box2d a{
+	/*box-shadow:none !important;*/
+	cursor:move;
+}
+
+//例外的li标签
+.extra{
+	width: 1500px;
+	height: 10px;
+}
+.extra div{
+	width: 1500px;
+	height: 10px;
+}
